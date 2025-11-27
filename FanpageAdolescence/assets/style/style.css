@@ -1,0 +1,198 @@
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+h2, h3 {
+    color: #115e6f;
+}
+footer {
+    width: 50%;
+    margin: auto;
+    padding: 8px 10px;
+    color: white;
+    background-color: #a2a6a1;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.3); 
+    font-size: 14px;
+}
+html {
+    scroll-padding-top: 80px; 
+}
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    border-radius: 999px;
+    transition: all 0.2s ease-in-out;
+}
+nav a:hover {
+    font-weight: bold;
+    background-color: #702b26;
+    color: white;
+}
+.profile header {
+    text-align: center;
+}
+.featured-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile img {
+    width: 350px;
+}
+.card {
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 24px;
+    margin-top: 15px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+
+    padding: 20px;
+}
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #a2a6a1;
+    text-align: center;
+    color: white;
+}
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+nav li {
+    list-style-type: none;
+    
+}
+nav {
+    background-color: #8B8C80;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+}
+
+figure img {
+    max-width: 40%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    display: flex;
+}
+
+figure figcaption {
+    margin-top: 10px;
+    font-size: 16px;
+    font-style: italic;
+    color: #702b26;
+    text-align: center;
+}
+#content {
+    flex: 3.5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+aside {
+    flex: 1;
+}
+header {
+    display: inline;
+}
+.profile-bio section {
+    text-align: center;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    color:#702b26;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+.profile-pic {
+    width: 150px;
+    padding: 0.5rem 0.5rem;
+    border-radius: 150px;
+    margin-bottom: 0.5rem;
+}
+.funfact header {
+    text-align: center;
+
+}
+.funfact section {
+    background-color: #e0e0e0;
+    padding: 2rem;
+    border-radius: 10px;
+    color: #702b26;
+    margin-bottom: 1rem;
+}
+details {
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+details:hover {
+    background-color: #f1f1f1;
+}
+
+summary {
+    font-weight: 600;
+    color:#702b26;
+    outline: none;
+    cursor: pointer;
+}
+
+details[open] {
+    background-color: white;
+    border-left: 4px solid #115e6f;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+       flex-flow: column nowrap;
+    }
+    main aside {
+        align-self: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+        gap: 1rem;
+    }
+    main aside {
+        align-self: stretch;
+    }
+
+    figure img {
+        max-width: 70%;
+    }
+} 
